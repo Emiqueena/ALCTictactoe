@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDEED4"
+    tools:context="com.example.android.alcnew.Settings">
+
+    <TextView
+        android:id= "@+id/player"
+        android:text="Choose Player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B26855"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"/>
+
+    <RelativeLayout
+        android:id="@+id/butt_rel"
+        android:layout_below="@id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageButton
+            android:background="#DDEED4"
+            android:src="@drawable/xf"
+            android:id="@+id/x_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="chooseX"/>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_toRightOf="@id/x_button"
+            android:background="#B26855"
+            android:layout_width="5dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <ImageButton
+            android:src="@drawable/of"
+            android:id="@+id/o_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#DDEED4"
+            android:onClick="chooseO" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/board"
+        android:layout_below="@id/butt_rel"
+        android:textColor="#B26855"
+        android:text="Select Board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/board_rel"
+        android:orientation="horizontal"
+        android:layout_below="@id/board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:src="@drawable/b3"
+            android:id="@+id/three"
+            android:background="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:onClick="choose3" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_toRightOf="@id/three"
+            android:background="#B26855"
+            android:layout_width="5dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:src="@drawable/b5"
+            android:layout_alignParentRight="true"
+            android:background="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:onClick="choose5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/board_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+    <ImageButton
+        android:src="@drawable/playbb"
+        android:id="@+id/human_player"
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DDEED4"
+        android:onClick="twoPlayers"/>
+
+</RelativeLayout>
+
+</RelativeLayout>
